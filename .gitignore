@@ -1,0 +1,10 @@
+*
+!index.html
+!2--*.js
+!3--*.css
+!img/
+!img/**
+!favicon.ico
+!.github/
+!.github/**
+!.gitignore
