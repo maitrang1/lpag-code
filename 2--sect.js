@@ -1,10 +1,12 @@
 //popup  
 eQ(Q('.zallSect'),()=>{popClo('menu')});   sSQ(popWa2,'max-height',wHe-2*s1T-2*e2p(.5)+'px');   sSQ(qc('popuMai2'),'margin-top',s1T+'px');   
 
+//button call now 
+eQ(Q('.buttCallHotl,.iconPhonWrap'),()=>{window.location.href='tel:+84909017236'}); 
 
 eq(qi('footForm'),e=>{ e.preventDefault();e.stopPropagation();var pho=q('#footPhon',qi('footForm')).value,iP=iPh(pho);if(!pho){popOpe('foot-form-phon')}
 else if(!iP){popOpe('foot-form-caut')} else{emailjs.sendForm('service_wkycy4o','template_7zkcx8r',qi('footForm')).then(()=>{popOpe('foot-form-succ');
-fSQ(Q('#footMess,#footPhon,#footEmai'));},(er)=>{popOpe('foot-form-erro');console.log('ER: ',er);});} },'submit');   
+fSQ(Q('#footMess,#footPhon,#footEmai'));},(er)=>{popOpe('foot-form-erro');console.log('ER: ',er);});} }, 'submit');   
 
 eq(qi('zallForm'),e=>{ e.preventDefault();e.stopPropagation();var pho=q('#zallPhon',qi('zallForm')).value,iP=iPh(pho);if(!pho){popOpe('menu-form-phon')}
 else if(!iP){popOpe('menu-form-caut')} else{emailjs.sendForm('service_wkycy4o','template_7zkcx8r',qi('zallForm')).then(()=>{popOpe('menu-form-succ');
