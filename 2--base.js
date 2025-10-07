@@ -67,7 +67,7 @@ tablSort=(id,n)=>{var table=qi(id),rows,rowL,swit=true,i,x,y,switNeed,dirSor="th
 const wdow=pw(),wWi=wdow.w,wHe=wdow.h,   pop=qc('popuMain'),   
 
 A={ 
-head:'-header-dau-trang', bene:'-uu-the-chinh', feat:'-dac-tinh-tot', hcmc:'-bao-gia-tphcm', hcm2:'-bao-gia-tphcm_m', hnoi:'-bao-gia-ha-noi', hno2:'-bao-gia-ha-noi_m', dnan:'-bao-gia-da-nang', dna2:'-bao-gia-da-nang_m', slab:'-mau-da-tam-dep', port:'-du-toan-chung', por2:'-hinh-anh-dep', cmtt:'-binh-luan-moi', faqs:'-faqs-cau-hoi', loca:'-xuong-cua-hang', foot:'-footer-cuoi-trang' 
+head:'-header-dau-trang', bene:'-uu-the-chinh', feat:'-dac-tinh-tot', hcmc:'-bao-gia-tphcm', hcm2:'-bao-gia-tphcm_m', hnoi:'-bao-gia-ha-noi', hno2:'-bao-gia-ha-noi_m', dnan:'-bao-gia-da-nang', dna2:'-bao-gia-da-nang_m', slab:'-mau-da-tam-dep', hmuc:'-mau-hang-muc-dep', port:'-du-toan-chung', por2:'-hinh-anh-dep', cmtt:'-binh-luan-moi', faqs:'-faqs-cau-hoi', loca:'-xuong-cua-hang', foot:'-footer-cuoi-trang' 
 },   
 
 //anchor   

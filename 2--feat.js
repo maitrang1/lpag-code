@@ -8,7 +8,8 @@ const slidFirsLast=()=>slidWrap.appendChild(slidWrap.firstElementChild),   slidL
 eq(q('.sv1Arr.Upp'),dBo9(()=>{clearInterval(featIval);slidUpup()}) );   eq(q('.sv1Arr.Dow'),dBo9(()=>{clearInterval(featIval);slidDown(true)}) );   
 
 //slabi   //tap1Auto   
-var tap1Ival, tap1Slab=q('#tap1Slab'), tap1Peri=9, tap1Cate=Q('.tap1Cate',tap1Slab), tap1Body=q('.tap1Body',tap1Slab), tap1Cont=Q('.tap1Cont',tap1Slab), tap1Pbar=q('.tap1Pba2',tap1Slab), htL=tap1Cate.length, i=Math.floor(Math.random()*htL);
+var tap1Ival, tap1Slab=q('#tap1Slab'), tap1Hmuc=q('#tap1Hmuc'), tap1Peri=9, tap1Cate=Q('.tap1Cate',tap1Slab), tap1Body=q('.tap1Body',tap1Slab), tap1Cont=Q('.tap1Cont',tap1Slab), tap1Pbar=q('.tap1Pba2',tap1Slab), htL=tap1Cate.length, i=Math.floor(Math.random()*htL);
+var tap1HmucIval, tap1HmucCate, tap1HmucBody, tap1HmucCont, tap1HmucPbar, htLHmuc, iHmuc;
 const getOffsetTop=(elem)=>{ var offsetTop=0; while (elem){ offsetTop+=elem.offsetTop; elem=elem.offsetParent; } return offsetTop; }   
 var tap1CateTopp=getOffsetTop(tap1Cate[i]), tap1BodyTopp=getOffsetTop(tap1Body), tap1CateBody=tap1BodyTopp-tap1CateTopp, tap1CateHeig=tap1Cate[i].offsetHeight, 
 tap1CateBott=parseFloat(window.getComputedStyle(tap1Cate[i]).marginBottom), tap1CateHei2=tap1CateHeig+tap1CateBott;   
@@ -19,6 +20,18 @@ i++; if(i===htL){ i=0; }   tap1CateTopp=getOffsetTop(tap1Cate[i]); tap1CateBody=
 eQ(tap1Cont,()=>{clearInterval(tap1Ival);sSts(tap1Pbar);sSw1(tap1Pbar);}); tap1Cate.forEach(tab=>{ eq(tab,()=>tap1Even(tab),'mouseenter'); eqt(tab,()=>tap1Even(tab)); });   
 const tap1Even=(tab)=>{ clearInterval(tap1Ival); sSts(tap1Pbar); sSw1(tap1Pbar);   
 tap1Cate.forEach(el=>{cR(el);sS(el,'margin-bottom');}); tap1CateTopp=getOffsetTop(tab); tap1CateBody=tap1BodyTopp-tap1CateTopp; cA(tab);sS(tab,'margin-bottom',`${-tap1CateBody-e2p(.15)+tap1CateHei2}px`); tap1Iden=tab.id;   Q(`.${tap1Iden}`,tap1Slab).forEach(el =>cA(el)); Q(`.tap1Cont:not(.${tap1Iden})`,tap1Slab).forEach(el =>cR(el)); }   
+
+//hmuc   //tap1HmucAuto   
+const tap1HmucInit=()=>{ if(!tap1Hmuc) return; tap1HmucCate=Q('.tap1Cate',tap1Hmuc); tap1HmucBody=q('.tap1Body',tap1Hmuc); tap1HmucCont=Q('.tap1Cont',tap1Hmuc); tap1HmucPbar=q('.tap1Pba2',tap1Hmuc); htLHmuc=tap1HmucCate.length; iHmuc=Math.floor(Math.random()*htLHmuc);
+var tap1HmucCateTopp=getOffsetTop(tap1HmucCate[iHmuc]), tap1HmucBodyTopp=getOffsetTop(tap1HmucBody), tap1HmucCateBody=tap1HmucBodyTopp-tap1HmucCateTopp, tap1HmucCateHeig=tap1HmucCate[iHmuc].offsetHeight, 
+tap1HmucCateBott=parseFloat(window.getComputedStyle(tap1HmucCate[iHmuc]).marginBottom), tap1HmucCateHei2=tap1HmucCateHeig+tap1HmucCateBott;   
+tap1HmucCate.forEach(el=>{cR(el);sS(el,'margin-bottom');});   sSts(tap1HmucPbar);sSw0(tap1HmucPbar);  setTimeout(()=>{sStswi(tap1HmucPbar,tap1Peri);sSw1(tap1HmucPbar);}, 50);   cA(tap1HmucCate[iHmuc]);sS(tap1HmucCate[iHmuc],'margin-bottom',`${-tap1HmucCateBody-e2p(.15)+tap1HmucCateHei2}px`);   
+var tap1HmucIden=tap1HmucCate[iHmuc].id; Q(`.${tap1HmucIden}`,tap1Hmuc).forEach(el=>cA(el));   Q(`.tap1Cont:not(.${tap1HmucIden})`,tap1Hmuc).forEach(el =>cR(el));
+eQ(tap1HmucCont,()=>{clearInterval(tap1HmucIval);sSts(tap1HmucPbar);sSw1(tap1HmucPbar);}); tap1HmucCate.forEach(tab=>{ eq(tab,()=>tap1HmucEven(tab),'mouseenter'); eqt(tab,()=>tap1HmucEven(tab)); });   }   
+const tap1HmucAuto=()=>{ if(!tap1Hmuc) return; sSts(tap1HmucPbar); sSw0(tap1HmucPbar);  setTimeout(()=>{sStswi(tap1HmucPbar,tap1Peri);sSw1(tap1HmucPbar);}, 50); 
+cR(tap1HmucCate[iHmuc]);sS(tap1HmucCate[iHmuc],'margin-bottom'); iHmuc++; if(iHmuc===htLHmuc){ iHmuc=0; }   var tap1HmucCateTopp=getOffsetTop(tap1HmucCate[iHmuc]), tap1HmucBodyTopp=getOffsetTop(tap1HmucBody), tap1HmucCateBody=tap1HmucBodyTopp-tap1HmucCateTopp, tap1HmucCateHeig=tap1HmucCate[iHmuc].offsetHeight, tap1HmucCateBott=parseFloat(window.getComputedStyle(tap1HmucCate[iHmuc]).marginBottom), tap1HmucCateHei2=tap1HmucCateHeig+tap1HmucCateBott;   cA(tap1HmucCate[iHmuc]);sS(tap1HmucCate[iHmuc],'margin-bottom',`${-tap1HmucCateBody-e2p(.15)+tap1HmucCateHei2}px`);   var tap1HmucIden=tap1HmucCate[iHmuc].id; Q(`.${tap1HmucIden}`,tap1Hmuc).forEach(el =>cA(el)); Q(`.tap1Cont:not(.${tap1HmucIden})`,tap1Hmuc).forEach(el =>cR(el));   }    
+const tap1HmucEven=(tab)=>{ if(!tap1Hmuc) return; clearInterval(tap1HmucIval); sSts(tap1HmucPbar); sSw1(tap1HmucPbar);   
+tap1HmucCate.forEach(el=>{cR(el);sS(el,'margin-bottom');}); var tap1HmucCateTopp=getOffsetTop(tab), tap1HmucBodyTopp=getOffsetTop(tap1HmucBody), tap1HmucCateBody=tap1HmucBodyTopp-tap1HmucCateTopp, tap1HmucCateHeig=tab.offsetHeight, tap1HmucCateBott=parseFloat(window.getComputedStyle(tab).marginBottom), tap1HmucCateHei2=tap1HmucCateHeig+tap1HmucCateBott; cA(tab);sS(tab,'margin-bottom',`${-tap1HmucCateBody-e2p(.15)+tap1HmucCateHei2}px`); var tap1HmucIden=tab.id;   Q(`.${tap1HmucIden}`,tap1Hmuc).forEach(el =>cA(el)); Q(`.tap1Cont:not(.${tap1HmucIden})`,tap1Hmuc).forEach(el =>cR(el)); }   
 
 //port   //gall  
 const sHo1Wrap=qi('sHo1WrapPort'), sHo1Wra2=qi('sHo1Wra2Port'), sHo1Body=q('.sHo1Body',sHo1Wrap), sHo1Item=Q('.sHo1Item',sHo1Wrap), sHo1Thum=Q('.sHo1Thum',sHo1Wrap), sHo1PlayPaus=qi('sHo1PlayPaus'), sHo1Rota=qi('sHo1Rotation'), sHo1Down=qi('sHo1Download'), portPbar=q('.pbarHor2.port'), sHo1Prev=document.getElementById('sHo1PrevSlid'), sHo1Next=document.getElementById('sHo1NextSlid'), sHo1ShowTime=9, sHo1Len0=sHo1Item.length;   

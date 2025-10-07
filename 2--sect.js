@@ -103,6 +103,11 @@ if(secIde===A.dnan+'_m'){   cAQs(Q('.co2.dna2'));   setTimeout(()=>{popSmaOpe('n
 //sslab 
 if(secIde===A.slab){   tap1Ival=setInterval(tap1Auto, tap1Peri*1e3);   
 } else {   clearInterval(tap1Ival);   
+}
+
+//shmuc 
+if(secIde===A.hmuc){   tap1HmucInit(); tap1HmucIval=setInterval(tap1HmucAuto, tap1Peri*1e3);   
+} else {   clearInterval(tap1HmucIval);   
 } 
 
 //pport   
