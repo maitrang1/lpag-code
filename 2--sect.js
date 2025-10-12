@@ -54,7 +54,7 @@ const secIde=sects[sectActi].id;
 
 
 //hhead   
-if(secIde===A.head){   cAQs(Q('.row.titl,.row.subt,.row.butt,.row.link'));   setTimeout(()=>{popSmaOpe('nextSect');setTimeout(()=>{popClo('nextSect')},3e3);},6e3);   
+if(secIde===A.head){   cAQs(Q('.row.titl,.row.subt,.row.butt,.row.link'));   setTimeout(()=>{popSmaOpe('nextSect')},3e3);   
 const textData=gTD();   if(where=='naviRigh'){ tS(qi('type-head-hea2'),textData.headText.main) }  
 else{ tS(qi('type-head-hea2')); typeArra([ ['type-head-hea2', headHea2Tex0] ],[textData.headText.typeArray], 5e3, 33 ); }   
 } else {   cRQs(Q('.row.titl,.row.subt,.row.butt,.row.link'));   popClo('nextSect');   typeStop['type-head-hea2']=true;   
@@ -71,32 +71,32 @@ if(secIde===A.feat){   cAQs(Q('.featCont,.featMedi'));   featIval=setInterval(()
 }   
 
 //hhcmc 
-if(secIde===A.hcmc){   cAQs(Q('.row.hcmc.hea2,.co3.hcmc.one,.co3.hcmc.two'));   if(wWi<1201){ setTimeout(()=>{popSmaOpe('nextSect');setTimeout(()=>{popClo('nextSect')},3e3);},6e3); }   
+if(secIde===A.hcmc){   cAQs(Q('.row.hcmc.hea2,.co3.hcmc.one,.co3.hcmc.two'));   if(wWi<1201){ setTimeout(()=>{popSmaOpe('nextSect')},3e3); }   
 } else {   cRQs(Q('.row.hcmc.hea2,.co3.hcmc.one,.co3.hcmc.two'));   popClo('nextSect');   
 }   
 
 //hhcmc mobile  
-if(secIde===A.hcmc+'_m'){   cAQs(Q('.co2.hcm2'));   setTimeout(()=>{popSmaOpe('nextSect');setTimeout(()=>{popClo('nextSect')},3e3);},6e3);   
+if(secIde===A.hcmc+'_m'){   cAQs(Q('.co2.hcm2'));   setTimeout(()=>{popSmaOpe('nextSect')},3e3);   
 } else {   cRQs(Q('.co2.hcm2'));   popClo('nextSect');   
 }   
 
 //hhnoi 
-if(secIde===A.hnoi){   cAQs(Q('.row.hnoi.hea2,.co3.hnoi.one,.co3.hnoi.two'));   if(wWi<1201){ setTimeout(()=>{popSmaOpe('nextSect');setTimeout(()=>{popClo('nextSect')},3e3);},6e3); }   
+if(secIde===A.hnoi){   cAQs(Q('.row.hnoi.hea2,.co3.hnoi.one,.co3.hnoi.two'));   if(wWi<1201){ setTimeout(()=>{popSmaOpe('nextSect')},3e3); }   
 } else {   cRQs(Q('.row.hnoi.hea2,.co3.hnoi.one,.co3.hnoi.two'));   popClo('nextSect');   
 }   
 
 //hhnoi mobile
-if(secIde===A.hnoi+'_m'){   cAQs(Q('.co2.hno2'));   setTimeout(()=>{popSmaOpe('nextSect');setTimeout(()=>{popClo('nextSect')},3e3);},6e3);   
+if(secIde===A.hnoi+'_m'){   cAQs(Q('.co2.hno2'));   setTimeout(()=>{popSmaOpe('nextSect')},3e3);   
 } else {   cRQs(Q('.co2.hno2'));   popClo('nextSect');   
 }   
 
 //hdnan 
-if(secIde===A.dnan){   cAQs(Q('.row.dnan.hea2,.co3.dnan.one,.co3.dnan.two'));   if(wWi<1201){ setTimeout(()=>{popSmaOpe('nextSect');setTimeout(()=>{popClo('nextSect')},3e3);},6e3); }   
+if(secIde===A.dnan){   cAQs(Q('.row.dnan.hea2,.co3.dnan.one,.co3.dnan.two'));   if(wWi<1201){ setTimeout(()=>{popSmaOpe('nextSect')},3e3); }   
 } else {   cRQs(Q('.row.dnan.hea2,.co3.dnan.one,.co3.dnan.two'));   popClo('nextSect');   
 }   
 
 //hdnan mobile
-if(secIde===A.dnan+'_m'){   cAQs(Q('.co2.dna2'));   setTimeout(()=>{popSmaOpe('nextSect');setTimeout(()=>{popClo('nextSect')},3e3);},6e3);   
+if(secIde===A.dnan+'_m'){   cAQs(Q('.co2.dna2'));   setTimeout(()=>{popSmaOpe('nextSect')},3e3);   
 } else {   cRQs(Q('.co2.dna2'));   popClo('nextSect');   
 }   
 
@@ -112,14 +112,14 @@ if(secIde===A.hmuc){   tap1HmucInit(); tap1HmucIval=setInterval(tap1HmucAuto, ta
 
 //pport   
 if(secIde===A.port){   cAQs(Q('.row.port.hea2,.co2.port.last'));   
-setTimeout(()=>{popSmaOpe('nextSect');setTimeout(()=>{popClo('nextSect')},3e3);},6e3);   
+setTimeout(()=>{popSmaOpe('nextSect')},3e3);   
 } else {   cRQs(Q('.row.port.hea2,.co2.port.last'));   popClo('nextSect');   
 }   
 
 //pport   
 if(secIde===A.por2){   cAQs(Q('.row.por2.hea2'));   keybBloc=true;   
 pbarSta0(portPbar);pbaWidSta(portPbar,sHo1ShowTime);sHo1PortIval=setInterval(()=>{nextSlid();pbaWidSta(portPbar,sHo1ShowTime);},1e3*sHo1ShowTime);buttPlay(sHo1PlayPaus);   
-setTimeout(()=>{popSmaOpe('nextSect');setTimeout(()=>{popClo('nextSect')},3e3);},6e3);   
+setTimeout(()=>{popSmaOpe('nextSect')},3e3);   
 } else {   cRQs(Q('.row.por2.hea2'));   keybBloc=false;   popClo('nextSect');   
 clearInterval(sHo1PortIval);pbaWidEn0(portPbar);buttPaus(sHo1PlayPaus);   
 }   
@@ -152,7 +152,7 @@ if(secIde===A.loca){   cAQs(Q('.sVe1Wrap'));   locaIval=setInterval(locaAuto,6e3
 } 
 
 //ffoot  
-if(secIde===A.foot){   cAQs(Q('.row.foot.hea2,.row.foot.twoo'));   setTimeout(()=>{popSmaOpe('prevSect');setTimeout(()=>{popClo('prevSect')},3e3);},6e3);   
+if(secIde===A.foot){   cAQs(Q('.row.foot.hea2,.row.foot.twoo'));   setTimeout(()=>{popSmaOpe('prevSect')},3e3);   
 } else {   cRQs(Q('.row.foot.hea2,.row.foot.twoo'));   popClo('prevSect');   
 }   
 

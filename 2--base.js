@@ -60,7 +60,7 @@ shoNowHor=(eles, index)=>{eles.forEach((sect,idx)=>{ sStstf(sect); sStftx(sect,(
 dCh=(d0,d1,pe=.05)=>{return((d1-d0)/d0>pe)},   
 
 //table tablSort   //end-const   
-tablSort=(id,n)=>{var table=qi(id),rows,rowL,swit=true,i,x,y,switNeed,dirSor="theSorAsc",switCout=0;while(swit){swit=false;rows=table.getElementsByTagName("tr");rowL=rows.length-1;for(i=1;i<rowL;i++){switNeed=false;x=rows[i].getElementsByTagName("td")[n];y=rows[i+1].getElementsByTagName("td")[n];if(dirSor=="theSorAsc"){if(x.innerHTML>y.innerHTML){switNeed=true;break}}else if(dirSor=="theSorDes"){if(x.innerHTML<y.innerHTML){switNeed=true;break}}}if(switNeed){pa(rows[i]).insertBefore(rows[i+1],rows[i]);swit=true;switCout++}else{if(switCout==0&&dirSor=="theSorAsc"){dirSor="theSorDes";swit=true}}}Q('th>div>b.hS',table).forEach((e,i)=>{cRA(e,["theSorAsc","theSorDes"]);if((i+1)==n){cA(e,dirSor)}})} 
+tablSort=(id,n)=>{var table=qi(id),rows,rowL,swit=true,i,x,y,switNeed,dirSor="theSorAsc",switCout=0;while(swit){swit=false;rows=table.getElementsByTagName("tr");rowL=rows.length-1;for(i=1;i<rowL;i++){switNeed=false;x=rows[i].getElementsByTagName("td")[n];y=rows[i+1].getElementsByTagName("td")[n];if(dirSor=="theSorAsc"){if(x.innerHTML>y.innerHTML){switNeed=true;break}}else if(dirSor=="theSorDes"){if(x.innerHTML<y.innerHTML){switNeed=true;break}}}if(switNeed){pa(rows[i]).insertBefore(rows[i+1],rows[i]);swit=true;switCout++}else{if(switCout==0&&dirSor=="theSorAsc"){dirSor="theSorDes";swit=true}}}Q('th>b.hS',table).forEach((e,i)=>{cRA(e,["theSorAsc","theSorDes"]);if((i)==n){cA(e,dirSor)}})} 
 
 
    
@@ -102,7 +102,7 @@ sS(naviRigh,'gap',navGap+'px');   sSt(naviRigh,(.5*wHe+ba2Hei/2-ba3Top-.5*ba4Hei
 },50);   
 
 //navi & menu   if wWi>2048   wHe>1024   
-sSl(q('#menuWap1'),s1L+'px');   if(wWi>1500){sSr(q('#menuWap2'),(s1R+'px'));}else if(wWi>600){sSr(q('#menuWap2'),(s1R+e2p(6)+'px'));}else{sSr(q('#menuWap2'),(s1R+e2p(3)+'px'));}   
+sSl(q('#menuWap1'),s1L+'px');   if(wWi>1500){sSr(q('#menuWap2'),(s1R+'px'));}else if(wWi>600){sSr(q('#menuWap2'),(s1R+e2p(4)+'px'));}else{sSr(q('#menuWap2'),(s1R+e2p(3)+'px'));}   
 if(wWi>2048){sSr(q('#naviRigh'),s1L+'px');}   if(wHe>1024){ sSb(q('#menuWap1'),s1T+'px'); sSb(q('#menuWap2'),s1T+'px') }   
 
 //block move section       
