@@ -181,9 +181,9 @@ input#footPhon,textarea#footMess{width:100%;color:var(--cte0);font-size:1em;back
 
 
 
-@media screen and (orientation: landscape){   .sHo1Wra2{flex-direction:row;} .sHo1Navi{width:6em;height:calc(100% - 2*var(--borThu));margin-top:var(--borThu);}
+@media screen and (orientation: landscape){   .sHo1Wra2{flex-direction:row;} .sHo1Navi{width:9em;height:calc(100% - 2*var(--borThu));margin-top:var(--borThu);}
 .sHo1Nav2{flex-direction:column;width:100%;} .sHo1Navi.one{border-radius:var(--bord-radi-aver) var(--bord-radi-aver) var(--bord-radi-aver) var(--bord-radi-aver);} .sHo1Navi.two{border-radius:var(--bord-radi-aver) var(--bord-radi-aver) var(--bord-radi-aver) var(--bord-radi-aver);} 
-.sHo1Thum{width:calc(100% - 2*var(--borThu));height:3em;margin:0 0 .21em 0;}   
+.sHo1Thum{width:calc(100% - 2*var(--borThu));height:4em;margin:0 0 .21em 0;}   
 }   
 
 @media screen and (orientation: portrait){   .sHo1Wra2{flex-direction:column;} .sHo1Navi{width:calc(100% - 2*var(--borThu));height:6em;margin-left:var(--borThu);}
