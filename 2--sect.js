@@ -152,8 +152,8 @@ if(secIde===A.loca){   cAQs(Q('.sVe1Wrap'));   locaIval=setInterval(locaAuto,6e3
 } 
 
 //ffoot  
-if(secIde===A.foot){   cAQs(Q('.row.foot.hea2,.row.foot.twoo'));   setTimeout(()=>{popSmaOpe('prevSect')},3e3);   
-} else {   cRQs(Q('.row.foot.hea2,.row.foot.twoo'));   popClo('prevSect');   
+if(secIde===A.foot){   cAQs(Q('.row.foot.hea2,.row.foot.twoo'));   setTimeout(()=>{popSmaOpe('prevSect')},3e3);   sSr(q('#menuWap2'),(s1R+e2p(3.5)+'px'));   
+} else {   cRQs(Q('.row.foot.hea2,.row.foot.twoo'));   popClo('prevSect');   sSr(q('#menuWap2'),(s1R+e2p(1)+'px'));   
 }   
 
 //move clone -> orginal head/foot   ,,,

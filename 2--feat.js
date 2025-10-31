@@ -37,7 +37,7 @@ tap1HmucCate.forEach(el=>{cR(el);sS(el,'margin-bottom');}); var tap1HmucCateTopp
 const sHo1Wrap=qi('sHo1WrapPort'), sHo1Wra2=qi('sHo1Wra2Port'), sHo1Body=q('.sHo1Body',sHo1Wrap), sHo1Item=Q('.sHo1Item',sHo1Wrap), sHo1Thum=Q('.sHo1Thum',sHo1Wrap), sHo1PlayPaus=qi('sHo1PlayPaus'), sHo1Rota=qi('sHo1Rotation'), sHo1Down=qi('sHo1Download'), portPbar=q('.pbarHor2.port'), sHo1Prev=document.getElementById('sHo1PrevSlid'), sHo1Next=document.getElementById('sHo1NextSlid'), sHo1ShowTime=9, sHo1Len0=sHo1Item.length;   
 let sHo1SlidActi=0, sHo1SlidPrev=sHo1SlidActi, sHo1SlidAbso, sHo1PortIval,portDegr=0;   
 
-//showSlide nextSlid prevSlid   
+//showSlide nextSlid prevSlid    
 const showSlide=(index, o)=>{ sHo1SlidAbso=nAb(index-sHo1SlidPrev);   
 if(sHo1SlidAbso>2){ if(wWi>wHe){shoNowVer(sHo1Item,index)}else{shoNowHor(sHo1Item,index)} }   
 if(wWi>wHe){ if(o==='x'){ sHo1Item.forEach((slide, i)=>{sStftx(slide,(i-index)*100+'%'); cT(sHo1Thum[i],i===index); if(i===index){ let naviWrap=pa(sHo1Thum[i],2); scrVerCen(naviWrap,q('.sHo1Thum.act'),300); } if(i===index){cA(slide)}else{cR(slide)} }); } 

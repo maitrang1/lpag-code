@@ -102,7 +102,8 @@ sS(naviRigh,'gap',navGap+'px');   sSt(naviRigh,(.5*wHe+ba2Hei/2-ba3Top-.5*ba4Hei
 },50);   
 
 //navi & menu   if wWi>2048   wHe>1024   
-sSl(q('#menuWap1'),s1L+'px');   if(wWi>1500){sSr(q('#menuWap2'),(s1R+'px'));}else if(wWi>600){sSr(q('#menuWap2'),(s1R+e2p(4)+'px'));}else{sSr(q('#menuWap2'),(s1R+e2p(3)+'px'));}   
+sSl(q('#menuWap1'),s1L+'px');   
+if(wWi>1500){sSr(q('#menuWap2'),(s1R+'px'));}
 if(wWi>2048){sSr(q('#naviRigh'),s1L+'px');}   if(wHe>1024){ sSb(q('#menuWap1'),s1T+'px'); sSb(q('#menuWap2'),s1T+'px') }   
 
 //block move section       
